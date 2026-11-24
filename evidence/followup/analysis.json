@@ -1,0 +1,1028 @@
+{
+  "pilot": {
+    "gemma3:1b": {
+      "strict": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 12,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 12,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 12,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 12,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      },
+      "rescored": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 12,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 12,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 12,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 12,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      },
+      "supplemented": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 12,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 12,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 12,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 12,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      }
+    },
+    "gemma3:4b": {
+      "strict": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 47,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 6,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 47,
+            "valid_actions": 47,
+            "missing_reports": 1,
+            "clear_failures": 12,
+            "retry": 6,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      },
+      "rescored": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 6,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 47,
+            "valid_actions": 48,
+            "missing_reports": 1,
+            "clear_failures": 12,
+            "retry": 6,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      },
+      "supplemented": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 6,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 6,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      }
+    },
+    "gemma3:12b": {
+      "strict": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      },
+      "rescored": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      },
+      "supplemented": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      }
+    },
+    "ministral-3:3b": {
+      "strict": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 0,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 6,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 0,
+            "missing_reports": 48,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 7,
+            "valid_actions": 7,
+            "missing_reports": 41,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      },
+      "rescored": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 48,
+            "missing_reports": 48,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 7,
+            "valid_actions": 48,
+            "missing_reports": 41,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      },
+      "supplemented": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      }
+    },
+    "ministral-3:8b": {
+      "strict": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 0,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 0,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 0,
+            "missing_reports": 48,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 0,
+            "missing_reports": 48,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      },
+      "rescored": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 48,
+            "missing_reports": 48,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 48,
+            "missing_reports": 48,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      },
+      "supplemented": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      }
+    },
+    "ministral-3:14b": {
+      "strict": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 0,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 0,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 0,
+            "missing_reports": 48,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 0,
+            "missing_reports": 48,
+            "clear_failures": 12,
+            "retry": 0,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      },
+      "rescored": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 48,
+            "missing_reports": 48,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 0,
+            "valid_actions": 48,
+            "missing_reports": 48,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      },
+      "supplemented": {
+        "split": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        },
+        "committed": {
+          "on": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          },
+          "off": {
+            "trials": 48,
+            "valid_reports": 48,
+            "valid_actions": 48,
+            "missing_reports": 0,
+            "clear_failures": 12,
+            "retry": 12,
+            "done": 0,
+            "unknown": 0,
+            "done_retry": 0
+          }
+        }
+      }
+    }
+  },
+  "supplement": {
+    "gemma3:4b": {
+      "not_done": 1
+    },
+    "ministral-3:3b": {
+      "done": 17,
+      "not_done": 72
+    },
+    "ministral-3:8b": {
+      "done": 24,
+      "not_done": 24,
+      "unknown": 48
+    },
+    "ministral-3:14b": {
+      "done": 23,
+      "not_done": 25,
+      "unknown": 48
+    }
+  },
+  "replication": {
+    "n": 24,
+    "off": {
+      "inspect": 6,
+      "retry": 17,
+      "close": 1
+    },
+    "on": {
+      "inspect": 8,
+      "retry": 15,
+      "close": 1
+    },
+    "gain": 0,
+    "loss": 2,
+    "effect_pp": -8.333333333333334,
+    "ci95_pp": [
+      -20.833333333333332,
+      0.0
+    ],
+    "p_two_sided": 0.5,
+    "families": {
+      "report export": {
+        "n": 8,
+        "off": {
+          "inspect": 1,
+          "retry": 7
+        },
+        "on": {
+          "inspect": 2,
+          "retry": 6
+        },
+        "gain": 0,
+        "loss": 1,
+        "effect_pp": -12.5,
+        "ci95_pp": [
+          -37.5,
+          0.0
+        ],
+        "p_two_sided": 1.0
+      },
+      "search index construction": {
+        "n": 8,
+        "off": {
+          "close": 1,
+          "retry": 4,
+          "inspect": 3
+        },
+        "on": {
+          "close": 1,
+          "retry": 3,
+          "inspect": 4
+        },
+        "gain": 0,
+        "loss": 1,
+        "effect_pp": -12.5,
+        "ci95_pp": [
+          -37.5,
+          0.0
+        ],
+        "p_two_sided": 1.0
+      },
+      "spreadsheet save": {
+        "n": 8,
+        "off": {
+          "retry": 6,
+          "inspect": 2
+        },
+        "on": {
+          "retry": 6,
+          "inspect": 2
+        },
+        "gain": 0,
+        "loss": 0,
+        "effect_pp": 0.0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "p_two_sided": 1.0
+      }
+    },
+    "interpretable": 48,
+    "criterion_met": false
+  },
+  "source_jsonl_sha256": {
+    "gemma3-1b/trials.jsonl": "a6843c188b4e2de9f96503f58b3634afb25ef649fa03bfbc72af65153e897e37",
+    "gemma3-4b/trials.jsonl": "70d3404d8da411c06275307ebd87b587e24ac0d43f189be828821009c472028a",
+    "gemma3-12b/trials.jsonl": "f5a581d1d6ac2c1a976c2de449e595f310c5809aef9eb098be4d7e6547ea38be",
+    "ministral-3-3b/trials.jsonl": "1b890ec5641e5045ffb8f23d2a1316eeee52e5f800a7904b7a490252a2a7a5c3",
+    "ministral-3-8b/trials.jsonl": "243896b21e44679215d8060ced415a00385e60554d60991e9169d89e54ca0d3e",
+    "ministral-3-14b/trials.jsonl": "fe7ea663272f3976ab70152c143491b886b26b5a3d20f8013520c0f16bd733c6"
+  },
+  "followup_jsonl_sha256": "405b44aef10f752e90673f05ba4e5dcd628ba3d4a198b3e8c5707e42c2114895"
+}

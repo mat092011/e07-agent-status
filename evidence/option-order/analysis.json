@@ -1,0 +1,246 @@
+{
+  "prespecified": {
+    "gemma3:1b": {
+      "report": {
+        "n": 72,
+        "first": 29,
+        "correct": 53,
+        "positions": {
+          "1": 29,
+          "3": 31,
+          "2": 12
+        },
+        "strict_valid": 72,
+        "valid": 72,
+        "baseline_agreement": 24,
+        "accuracy_by_correct_position": {
+          "2": {
+            "correct": 12,
+            "total": 24
+          },
+          "3": {
+            "correct": 24,
+            "total": 24
+          },
+          "1": {
+            "correct": 17,
+            "total": 24
+          }
+        },
+        "selected_by_rotation_and_outcome": {
+          "failure-0": {
+            "done": 12
+          },
+          "failure-2": {
+            "not_done": 12
+          },
+          "success-1": {
+            "done": 12
+          },
+          "success-2": {
+            "done": 12
+          },
+          "failure-1": {
+            "done": 7,
+            "not_done": 5
+          },
+          "success-0": {
+            "done": 12
+          }
+        },
+        "histories": 24,
+        "complete_histories": 24,
+        "always_first": 0,
+        "label_stable": 12,
+        "label_changed": 12
+      },
+      "action": {
+        "n": 72,
+        "first": 72,
+        "correct": 24,
+        "positions": {
+          "1": 72
+        },
+        "strict_valid": 72,
+        "valid": 72,
+        "baseline_agreement": 24,
+        "accuracy_by_correct_position": {
+          "1": {
+            "correct": 24,
+            "total": 24
+          },
+          "2": {
+            "correct": 0,
+            "total": 24
+          },
+          "3": {
+            "correct": 0,
+            "total": 24
+          }
+        },
+        "selected_by_rotation_and_outcome": {
+          "success-0": {
+            "close": 12
+          },
+          "success-2": {
+            "inspect": 12
+          },
+          "success-1": {
+            "retry": 12
+          },
+          "failure-1": {
+            "retry": 12
+          },
+          "failure-0": {
+            "close": 12
+          },
+          "failure-2": {
+            "inspect": 12
+          }
+        },
+        "histories": 24,
+        "complete_histories": 24,
+        "always_first": 24,
+        "label_stable": 0,
+        "label_changed": 24
+      }
+    },
+    "gemma3:12b": {
+      "report": {
+        "n": 72,
+        "first": 24,
+        "correct": 72,
+        "positions": {
+          "2": 24,
+          "3": 24,
+          "1": 24
+        },
+        "strict_valid": 72,
+        "valid": 72,
+        "baseline_agreement": 24,
+        "accuracy_by_correct_position": {
+          "2": {
+            "correct": 24,
+            "total": 24
+          },
+          "3": {
+            "correct": 24,
+            "total": 24
+          },
+          "1": {
+            "correct": 24,
+            "total": 24
+          }
+        },
+        "selected_by_rotation_and_outcome": {
+          "failure-0": {
+            "not_done": 12
+          },
+          "failure-2": {
+            "not_done": 12
+          },
+          "success-1": {
+            "done": 12
+          },
+          "success-2": {
+            "done": 12
+          },
+          "failure-1": {
+            "not_done": 12
+          },
+          "success-0": {
+            "done": 12
+          }
+        },
+        "histories": 24,
+        "complete_histories": 24,
+        "always_first": 0,
+        "label_stable": 24,
+        "label_changed": 0
+      },
+      "action": {
+        "n": 72,
+        "first": 35,
+        "correct": 61,
+        "positions": {
+          "1": 35,
+          "2": 24,
+          "3": 13
+        },
+        "strict_valid": 72,
+        "valid": 72,
+        "baseline_agreement": 24,
+        "accuracy_by_correct_position": {
+          "1": {
+            "correct": 24,
+            "total": 24
+          },
+          "2": {
+            "correct": 24,
+            "total": 24
+          },
+          "3": {
+            "correct": 13,
+            "total": 24
+          }
+        },
+        "selected_by_rotation_and_outcome": {
+          "success-0": {
+            "close": 12
+          },
+          "success-2": {
+            "close": 12
+          },
+          "success-1": {
+            "close": 12
+          },
+          "failure-1": {
+            "retry": 12
+          },
+          "failure-0": {
+            "retry": 12
+          },
+          "failure-2": {
+            "inspect": 11,
+            "retry": 1
+          }
+        },
+        "histories": 24,
+        "complete_histories": 24,
+        "always_first": 0,
+        "label_stable": 13,
+        "label_changed": 11
+      }
+    }
+  },
+  "exploratory_done_retry": {
+    "gemma3:1b": {
+      "0": {
+        "events": 0,
+        "pairs": 12
+      },
+      "1": {
+        "events": 7,
+        "pairs": 12
+      },
+      "2": {
+        "events": 0,
+        "pairs": 12
+      }
+    },
+    "gemma3:12b": {
+      "0": {
+        "events": 0,
+        "pairs": 12
+      },
+      "1": {
+        "events": 0,
+        "pairs": 12
+      },
+      "2": {
+        "events": 0,
+        "pairs": 12
+      }
+    }
+  }
+}

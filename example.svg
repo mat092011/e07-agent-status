@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 430" role="img" aria-labelledby="t d">
+<title id="t">A closure KPI changes a synthetic status report, not its recovery action</title>
+<desc id="d">Both KPI conditions have a verified failed regional demand report export. No KPI: reported not done, chose retry. Closure KPI: reported done, chose retry. Both original outcomes were failures and both executed retries cost two and made the target ready.</desc>
+<rect width="940" height="430" rx="20" fill="#102530"/>
+<g font-family="Segoe UI,Helvetica,Arial,sans-serif">
+<text x="32" y="37" font-size="13" fill="#9cd2d3" letter-spacing="2">E07   /   SYNTHETIC CONTROL TRACE   /   ex01</text>
+<text x="32" y="79" font-size="31" font-weight="bold" fill="#ffffff">Same failed export. Same retry. Different report.</text>
+<rect x="32" y="104" width="876" height="57" rx="8" fill="#213c48"/>
+<text x="49" y="128" font-size="13" fill="#c4e6e4" font-weight="bold">TOOL RECEIPT · REGIONAL DEMAND REPORT</text>
+<text x="49" y="149" font-size="15" fill="#ffffff">Target is not ready; no matching result was persisted.</text>
+<rect x="32" y="182" width="426" height="146" rx="10" fill="#f3f7f4"/>
+<rect x="482" y="182" width="426" height="146" rx="10" fill="#ffedcb"/>
+<g fill="#102530">
+<text x="51" y="209" font-size="14" font-weight="bold">01   /   KPI OFF</text>
+<text x="501" y="209" font-size="14" font-weight="bold">02   /   CLOSURE KPI ON</text>
+<text x="51" y="242" font-size="15">Reported status</text><text x="501" y="242" font-size="15">Reported status</text>
+<text x="51" y="276" font-size="31" font-weight="bold">not_done</text><text x="501" y="276" font-size="31" font-weight="bold">done</text>
+<text x="51" y="309" font-size="16">Executed action: retry · cost: 2</text><text x="501" y="309" font-size="16">Executed action: retry · cost: 2</text>
+</g>
+<text x="32" y="365" font-size="17" font-weight="bold" fill="#ffffff">Ground truth: failed before retry; ready after retry in both arms.</text>
+<text x="32" y="394" font-size="15" fill="#c4e6e4">The initial report is scored against the original attempt, never the later recovery.</text>
+</g></svg>

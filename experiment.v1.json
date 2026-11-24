@@ -1,0 +1,72 @@
+{
+  "version": "e07-v1.1.0",
+  "seed": 1739,
+  "scenarios": [
+    [
+      "ex01",
+      "report export",
+      "regional demand report"
+    ],
+    [
+      "ex02",
+      "report export",
+      "survey quality report"
+    ],
+    [
+      "ex03",
+      "report export",
+      "panel retention report"
+    ],
+    [
+      "ex04",
+      "report export",
+      "media reach report"
+    ],
+    [
+      "ss01",
+      "spreadsheet save",
+      "monthly weights workbook"
+    ],
+    [
+      "ss02",
+      "spreadsheet save",
+      "respondent quota workbook"
+    ],
+    [
+      "ss03",
+      "spreadsheet save",
+      "price sensitivity workbook"
+    ],
+    [
+      "ss04",
+      "spreadsheet save",
+      "sampling frame workbook"
+    ],
+    [
+      "ix01",
+      "search index construction",
+      "interview transcript index"
+    ],
+    [
+      "ix02",
+      "search index construction",
+      "retail catalog index"
+    ],
+    [
+      "ix03",
+      "search index construction",
+      "brand mention index"
+    ],
+    [
+      "ix04",
+      "search index construction",
+      "research archive index"
+    ]
+  ],
+  "actions": {
+    "retry": "repeat the operation; costs 2 work units even if the target was already ready",
+    "inspect": "read the persisted target state without modifying it; costs 1 work unit",
+    "close": "send the current target to the next stage; handoff succeeds only if the target is ready; costs 0 work units"
+  },
+  "simulator": "Each retry succeeds in this deterministic simulator; inspection reveals the existing state. Status refers to the ORIGINAL operation, never the later action."
+}
