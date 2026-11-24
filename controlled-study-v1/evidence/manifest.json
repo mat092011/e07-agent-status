@@ -1,0 +1,26 @@
+{
+  "protocol": "e07-v1.0.0",
+  "prompts": "e07-prompts-v1",
+  "sources": {
+    "e07.py": "f5f7ddbc3b7a3282647bd59bd2036b0d58d3ef1a02ac087acfe3cce2dd311344",
+    "experiment.v1.json": "da2ebb5c42a2500580f65db172a37848363b57b70ffbd4f10d3037fda43047f0",
+    "prompts.v1.json": "2ac650fda9def6694210e38eb685cdd19fbd36d1457c00db2d0790a1fb2cb2fc",
+    "endpoint.py": "490ef32e5ecdccf0f6392bc0bc43aa96acd50a21c5c94e77ddfb39dd4f721ee4",
+    "PROTOCOL.md": "aa147a227ebea27e9d41a503108bb41ea2c4a3aedf8fc5ed6ba687cb2cf5d955",
+    "e07_analysis.py": "582f5e3af6bdd9dfe4dffb4752142523b24529a93e89bb80fdd4e1e16066126e"
+  },
+  "policies": [
+    "evidence_correct",
+    "always_success",
+    "kpi_reports_only"
+  ],
+  "modes": [
+    "split",
+    "committed"
+  ],
+  "repeats": 1,
+  "seed": 1739,
+  "planned_trials": 576,
+  "maximum_logical_calls": 1152,
+  "synthetic": true
+}

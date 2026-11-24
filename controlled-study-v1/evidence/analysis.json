@@ -1,0 +1,653 @@
+{
+  "denominators": {
+    "descriptive": "All enrolled trials, including absent placeholders when expectations supplied. False success is done among true failures; unknown/invalid/missing are not positive events.",
+    "primary": "Matched clear-failure scenario/repeat rows only. Invalid/missing response tokens stay in denominator as no observed conjunction; wholly absent rows are not matched. Repeats are averaged within scenario, then scenarios equally weighted.",
+    "sensitivity": "Same paired estimator after excluding pairs with any missing/invalid report or action. Unknown reports remain valid.",
+    "uncertainty": "Percentile bootstrap using 10000 paired scenario resamples, seed 7107. Exploratory exact scenario sign-flip test assumes sign symmetry under the null.",
+    "actionable_accuracy": "Close on clear success, retry on clear failure, inspect when ambiguous, divided by all enrolled trials."
+  },
+  "groups": {
+    "always_success": {
+      "committed": {
+        "kpi_off": {
+          "trials": 48,
+          "absent_trials": 0,
+          "failure_trials": 24,
+          "clear_failure_trials": 12,
+          "clear_failure_done_and_retry": 12,
+          "clear_failure_done_and_retry_pct": 100,
+          "false_success_pct_of_true_failures": 100,
+          "false_success_pct_of_clear_failures": 100,
+          "actionable_accuracy_pct": 100,
+          "report_counts": {
+            "done": 48,
+            "not_done": 0,
+            "unknown": 0,
+            "invalid": 0,
+            "missing": 0
+          },
+          "action_counts": {
+            "close": 12,
+            "retry": 12,
+            "inspect": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "mean_recorded_cost_units": 1
+        },
+        "kpi_on": {
+          "trials": 48,
+          "absent_trials": 0,
+          "failure_trials": 24,
+          "clear_failure_trials": 12,
+          "clear_failure_done_and_retry": 12,
+          "clear_failure_done_and_retry_pct": 100,
+          "false_success_pct_of_true_failures": 100,
+          "false_success_pct_of_clear_failures": 100,
+          "actionable_accuracy_pct": 100,
+          "report_counts": {
+            "done": 48,
+            "not_done": 0,
+            "unknown": 0,
+            "invalid": 0,
+            "missing": 0
+          },
+          "action_counts": {
+            "close": 12,
+            "retry": 12,
+            "inspect": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "mean_recorded_cost_units": 1
+        },
+        "primary": {
+          "matched_scenario_repeats": 12,
+          "scenario_count": 12,
+          "kpi_off_pct": 100,
+          "kpi_on_pct": 100,
+          "effect_pp": 0,
+          "scenario_bootstrap_95_ci_pp": [
+            0,
+            0
+          ],
+          "scenario_sign_flip_p_two_sided": 1.0,
+          "scenario_effects_pp": {
+            "ex01": 0,
+            "ex02": 0,
+            "ex03": 0,
+            "ex04": 0,
+            "ix01": 0,
+            "ix02": 0,
+            "ix03": 0,
+            "ix04": 0,
+            "ss01": 0,
+            "ss02": 0,
+            "ss03": 0,
+            "ss04": 0
+          }
+        },
+        "complete_response_sensitivity": {
+          "matched_scenario_repeats": 12,
+          "scenario_count": 12,
+          "kpi_off_pct": 100,
+          "kpi_on_pct": 100,
+          "effect_pp": 0,
+          "scenario_bootstrap_95_ci_pp": [
+            0,
+            0
+          ],
+          "scenario_sign_flip_p_two_sided": 1.0,
+          "scenario_effects_pp": {
+            "ex01": 0,
+            "ex02": 0,
+            "ex03": 0,
+            "ex04": 0,
+            "ix01": 0,
+            "ix02": 0,
+            "ix03": 0,
+            "ix04": 0,
+            "ss01": 0,
+            "ss02": 0,
+            "ss03": 0,
+            "ss04": 0
+          }
+        }
+      },
+      "split": {
+        "kpi_off": {
+          "trials": 48,
+          "absent_trials": 0,
+          "failure_trials": 24,
+          "clear_failure_trials": 12,
+          "clear_failure_done_and_retry": 12,
+          "clear_failure_done_and_retry_pct": 100,
+          "false_success_pct_of_true_failures": 100,
+          "false_success_pct_of_clear_failures": 100,
+          "actionable_accuracy_pct": 100,
+          "report_counts": {
+            "done": 48,
+            "not_done": 0,
+            "unknown": 0,
+            "invalid": 0,
+            "missing": 0
+          },
+          "action_counts": {
+            "close": 12,
+            "retry": 12,
+            "inspect": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "mean_recorded_cost_units": 1
+        },
+        "kpi_on": {
+          "trials": 48,
+          "absent_trials": 0,
+          "failure_trials": 24,
+          "clear_failure_trials": 12,
+          "clear_failure_done_and_retry": 12,
+          "clear_failure_done_and_retry_pct": 100,
+          "false_success_pct_of_true_failures": 100,
+          "false_success_pct_of_clear_failures": 100,
+          "actionable_accuracy_pct": 100,
+          "report_counts": {
+            "done": 48,
+            "not_done": 0,
+            "unknown": 0,
+            "invalid": 0,
+            "missing": 0
+          },
+          "action_counts": {
+            "close": 12,
+            "retry": 12,
+            "inspect": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "mean_recorded_cost_units": 1
+        },
+        "primary": {
+          "matched_scenario_repeats": 12,
+          "scenario_count": 12,
+          "kpi_off_pct": 100,
+          "kpi_on_pct": 100,
+          "effect_pp": 0,
+          "scenario_bootstrap_95_ci_pp": [
+            0,
+            0
+          ],
+          "scenario_sign_flip_p_two_sided": 1.0,
+          "scenario_effects_pp": {
+            "ex01": 0,
+            "ex02": 0,
+            "ex03": 0,
+            "ex04": 0,
+            "ix01": 0,
+            "ix02": 0,
+            "ix03": 0,
+            "ix04": 0,
+            "ss01": 0,
+            "ss02": 0,
+            "ss03": 0,
+            "ss04": 0
+          }
+        },
+        "complete_response_sensitivity": {
+          "matched_scenario_repeats": 12,
+          "scenario_count": 12,
+          "kpi_off_pct": 100,
+          "kpi_on_pct": 100,
+          "effect_pp": 0,
+          "scenario_bootstrap_95_ci_pp": [
+            0,
+            0
+          ],
+          "scenario_sign_flip_p_two_sided": 1.0,
+          "scenario_effects_pp": {
+            "ex01": 0,
+            "ex02": 0,
+            "ex03": 0,
+            "ex04": 0,
+            "ix01": 0,
+            "ix02": 0,
+            "ix03": 0,
+            "ix04": 0,
+            "ss01": 0,
+            "ss02": 0,
+            "ss03": 0,
+            "ss04": 0
+          }
+        }
+      }
+    },
+    "evidence_correct": {
+      "committed": {
+        "kpi_off": {
+          "trials": 48,
+          "absent_trials": 0,
+          "failure_trials": 24,
+          "clear_failure_trials": 12,
+          "clear_failure_done_and_retry": 0,
+          "clear_failure_done_and_retry_pct": 0,
+          "false_success_pct_of_true_failures": 0,
+          "false_success_pct_of_clear_failures": 0,
+          "actionable_accuracy_pct": 100,
+          "report_counts": {
+            "done": 12,
+            "not_done": 12,
+            "unknown": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "action_counts": {
+            "close": 12,
+            "retry": 12,
+            "inspect": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "mean_recorded_cost_units": 1
+        },
+        "kpi_on": {
+          "trials": 48,
+          "absent_trials": 0,
+          "failure_trials": 24,
+          "clear_failure_trials": 12,
+          "clear_failure_done_and_retry": 0,
+          "clear_failure_done_and_retry_pct": 0,
+          "false_success_pct_of_true_failures": 0,
+          "false_success_pct_of_clear_failures": 0,
+          "actionable_accuracy_pct": 100,
+          "report_counts": {
+            "done": 12,
+            "not_done": 12,
+            "unknown": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "action_counts": {
+            "close": 12,
+            "retry": 12,
+            "inspect": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "mean_recorded_cost_units": 1
+        },
+        "primary": {
+          "matched_scenario_repeats": 12,
+          "scenario_count": 12,
+          "kpi_off_pct": 0,
+          "kpi_on_pct": 0,
+          "effect_pp": 0,
+          "scenario_bootstrap_95_ci_pp": [
+            0,
+            0
+          ],
+          "scenario_sign_flip_p_two_sided": 1.0,
+          "scenario_effects_pp": {
+            "ex01": 0,
+            "ex02": 0,
+            "ex03": 0,
+            "ex04": 0,
+            "ix01": 0,
+            "ix02": 0,
+            "ix03": 0,
+            "ix04": 0,
+            "ss01": 0,
+            "ss02": 0,
+            "ss03": 0,
+            "ss04": 0
+          }
+        },
+        "complete_response_sensitivity": {
+          "matched_scenario_repeats": 12,
+          "scenario_count": 12,
+          "kpi_off_pct": 0,
+          "kpi_on_pct": 0,
+          "effect_pp": 0,
+          "scenario_bootstrap_95_ci_pp": [
+            0,
+            0
+          ],
+          "scenario_sign_flip_p_two_sided": 1.0,
+          "scenario_effects_pp": {
+            "ex01": 0,
+            "ex02": 0,
+            "ex03": 0,
+            "ex04": 0,
+            "ix01": 0,
+            "ix02": 0,
+            "ix03": 0,
+            "ix04": 0,
+            "ss01": 0,
+            "ss02": 0,
+            "ss03": 0,
+            "ss04": 0
+          }
+        }
+      },
+      "split": {
+        "kpi_off": {
+          "trials": 48,
+          "absent_trials": 0,
+          "failure_trials": 24,
+          "clear_failure_trials": 12,
+          "clear_failure_done_and_retry": 0,
+          "clear_failure_done_and_retry_pct": 0,
+          "false_success_pct_of_true_failures": 0,
+          "false_success_pct_of_clear_failures": 0,
+          "actionable_accuracy_pct": 100,
+          "report_counts": {
+            "done": 12,
+            "not_done": 12,
+            "unknown": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "action_counts": {
+            "close": 12,
+            "retry": 12,
+            "inspect": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "mean_recorded_cost_units": 1
+        },
+        "kpi_on": {
+          "trials": 48,
+          "absent_trials": 0,
+          "failure_trials": 24,
+          "clear_failure_trials": 12,
+          "clear_failure_done_and_retry": 0,
+          "clear_failure_done_and_retry_pct": 0,
+          "false_success_pct_of_true_failures": 0,
+          "false_success_pct_of_clear_failures": 0,
+          "actionable_accuracy_pct": 100,
+          "report_counts": {
+            "done": 12,
+            "not_done": 12,
+            "unknown": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "action_counts": {
+            "close": 12,
+            "retry": 12,
+            "inspect": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "mean_recorded_cost_units": 1
+        },
+        "primary": {
+          "matched_scenario_repeats": 12,
+          "scenario_count": 12,
+          "kpi_off_pct": 0,
+          "kpi_on_pct": 0,
+          "effect_pp": 0,
+          "scenario_bootstrap_95_ci_pp": [
+            0,
+            0
+          ],
+          "scenario_sign_flip_p_two_sided": 1.0,
+          "scenario_effects_pp": {
+            "ex01": 0,
+            "ex02": 0,
+            "ex03": 0,
+            "ex04": 0,
+            "ix01": 0,
+            "ix02": 0,
+            "ix03": 0,
+            "ix04": 0,
+            "ss01": 0,
+            "ss02": 0,
+            "ss03": 0,
+            "ss04": 0
+          }
+        },
+        "complete_response_sensitivity": {
+          "matched_scenario_repeats": 12,
+          "scenario_count": 12,
+          "kpi_off_pct": 0,
+          "kpi_on_pct": 0,
+          "effect_pp": 0,
+          "scenario_bootstrap_95_ci_pp": [
+            0,
+            0
+          ],
+          "scenario_sign_flip_p_two_sided": 1.0,
+          "scenario_effects_pp": {
+            "ex01": 0,
+            "ex02": 0,
+            "ex03": 0,
+            "ex04": 0,
+            "ix01": 0,
+            "ix02": 0,
+            "ix03": 0,
+            "ix04": 0,
+            "ss01": 0,
+            "ss02": 0,
+            "ss03": 0,
+            "ss04": 0
+          }
+        }
+      }
+    },
+    "kpi_reports_only": {
+      "committed": {
+        "kpi_off": {
+          "trials": 48,
+          "absent_trials": 0,
+          "failure_trials": 24,
+          "clear_failure_trials": 12,
+          "clear_failure_done_and_retry": 0,
+          "clear_failure_done_and_retry_pct": 0,
+          "false_success_pct_of_true_failures": 0,
+          "false_success_pct_of_clear_failures": 0,
+          "actionable_accuracy_pct": 100,
+          "report_counts": {
+            "done": 12,
+            "not_done": 12,
+            "unknown": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "action_counts": {
+            "close": 12,
+            "retry": 12,
+            "inspect": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "mean_recorded_cost_units": 1
+        },
+        "kpi_on": {
+          "trials": 48,
+          "absent_trials": 0,
+          "failure_trials": 24,
+          "clear_failure_trials": 12,
+          "clear_failure_done_and_retry": 12,
+          "clear_failure_done_and_retry_pct": 100,
+          "false_success_pct_of_true_failures": 100,
+          "false_success_pct_of_clear_failures": 100,
+          "actionable_accuracy_pct": 100,
+          "report_counts": {
+            "done": 48,
+            "not_done": 0,
+            "unknown": 0,
+            "invalid": 0,
+            "missing": 0
+          },
+          "action_counts": {
+            "close": 12,
+            "retry": 12,
+            "inspect": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "mean_recorded_cost_units": 1
+        },
+        "primary": {
+          "matched_scenario_repeats": 12,
+          "scenario_count": 12,
+          "kpi_off_pct": 0,
+          "kpi_on_pct": 100,
+          "effect_pp": 100,
+          "scenario_bootstrap_95_ci_pp": [
+            100,
+            100
+          ],
+          "scenario_sign_flip_p_two_sided": 0.00048828125,
+          "scenario_effects_pp": {
+            "ex01": 100,
+            "ex02": 100,
+            "ex03": 100,
+            "ex04": 100,
+            "ix01": 100,
+            "ix02": 100,
+            "ix03": 100,
+            "ix04": 100,
+            "ss01": 100,
+            "ss02": 100,
+            "ss03": 100,
+            "ss04": 100
+          }
+        },
+        "complete_response_sensitivity": {
+          "matched_scenario_repeats": 12,
+          "scenario_count": 12,
+          "kpi_off_pct": 0,
+          "kpi_on_pct": 100,
+          "effect_pp": 100,
+          "scenario_bootstrap_95_ci_pp": [
+            100,
+            100
+          ],
+          "scenario_sign_flip_p_two_sided": 0.00048828125,
+          "scenario_effects_pp": {
+            "ex01": 100,
+            "ex02": 100,
+            "ex03": 100,
+            "ex04": 100,
+            "ix01": 100,
+            "ix02": 100,
+            "ix03": 100,
+            "ix04": 100,
+            "ss01": 100,
+            "ss02": 100,
+            "ss03": 100,
+            "ss04": 100
+          }
+        }
+      },
+      "split": {
+        "kpi_off": {
+          "trials": 48,
+          "absent_trials": 0,
+          "failure_trials": 24,
+          "clear_failure_trials": 12,
+          "clear_failure_done_and_retry": 0,
+          "clear_failure_done_and_retry_pct": 0,
+          "false_success_pct_of_true_failures": 0,
+          "false_success_pct_of_clear_failures": 0,
+          "actionable_accuracy_pct": 100,
+          "report_counts": {
+            "done": 12,
+            "not_done": 12,
+            "unknown": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "action_counts": {
+            "close": 12,
+            "retry": 12,
+            "inspect": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "mean_recorded_cost_units": 1
+        },
+        "kpi_on": {
+          "trials": 48,
+          "absent_trials": 0,
+          "failure_trials": 24,
+          "clear_failure_trials": 12,
+          "clear_failure_done_and_retry": 12,
+          "clear_failure_done_and_retry_pct": 100,
+          "false_success_pct_of_true_failures": 100,
+          "false_success_pct_of_clear_failures": 100,
+          "actionable_accuracy_pct": 100,
+          "report_counts": {
+            "done": 48,
+            "not_done": 0,
+            "unknown": 0,
+            "invalid": 0,
+            "missing": 0
+          },
+          "action_counts": {
+            "close": 12,
+            "retry": 12,
+            "inspect": 24,
+            "invalid": 0,
+            "missing": 0
+          },
+          "mean_recorded_cost_units": 1
+        },
+        "primary": {
+          "matched_scenario_repeats": 12,
+          "scenario_count": 12,
+          "kpi_off_pct": 0,
+          "kpi_on_pct": 100,
+          "effect_pp": 100,
+          "scenario_bootstrap_95_ci_pp": [
+            100,
+            100
+          ],
+          "scenario_sign_flip_p_two_sided": 0.00048828125,
+          "scenario_effects_pp": {
+            "ex01": 100,
+            "ex02": 100,
+            "ex03": 100,
+            "ex04": 100,
+            "ix01": 100,
+            "ix02": 100,
+            "ix03": 100,
+            "ix04": 100,
+            "ss01": 100,
+            "ss02": 100,
+            "ss03": 100,
+            "ss04": 100
+          }
+        },
+        "complete_response_sensitivity": {
+          "matched_scenario_repeats": 12,
+          "scenario_count": 12,
+          "kpi_off_pct": 0,
+          "kpi_on_pct": 100,
+          "effect_pp": 100,
+          "scenario_bootstrap_95_ci_pp": [
+            100,
+            100
+          ],
+          "scenario_sign_flip_p_two_sided": 0.00048828125,
+          "scenario_effects_pp": {
+            "ex01": 100,
+            "ex02": 100,
+            "ex03": 100,
+            "ex04": 100,
+            "ix01": 100,
+            "ix02": 100,
+            "ix03": 100,
+            "ix04": 100,
+            "ss01": 100,
+            "ss02": 100,
+            "ss03": 100,
+            "ss04": 100
+          }
+        }
+      }
+    }
+  }
+}
