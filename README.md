@@ -1,5 +1,7 @@
 # E07 · When a status update and a recovery action disagree
 
+[Read the article (PDF)](publication/article.pdf) · [Protocol (PDF)](publication/protocol.pdf) · [Reproduce and inspect the evidence](docs/REPRODUCIBILITY.md) · [Changelog](CHANGELOG.md)
+
 **Gemma 3 1B changed one status report when the dashboard rewarded completion.** After a confirmed failure, it switched from `not_done` to `done` on a report export and chose `retry` in both conditions. Across 12 scenarios and three menu orders, the number of times it reported `done` and chose `retry` rose from **7/36 to 8/36** (+2.8 percentage points, 95% scenario-bootstrap interval 0.0 to +8.3). Gemma 3 12B had **0/36** such cases in each condition. The report and the action came from separate requests about the same failed attempt. [Balanced-order results](followup/balanced-kpi/REPORT.md) · [Raw responses](evidence/balanced-kpi/responses.jsonl.gz)
 
 **Menu order mattered even with the KPI off.** In a separate experiment on the same 12 failures, Gemma 1B reported `done` and chose `retry` in **0/12** cases with the original menu, **7/12** after the first rotation and **0/12** after the second. All seven cases occurred when `retry` appeared first. These counts describe the tested scenarios and model snapshots. [Option-order results](followup/option-order/REPORT.md) · [Raw responses](evidence/option-order/responses.jsonl.gz)
@@ -27,12 +29,7 @@ python -B e07.py pilot --out runs/portfolio-v1.1 --policy all --mode both --repe
 python -B e07.py analyze runs/portfolio-v1.1/trials.jsonl --out runs/portfolio-v1.1/reanalysis.json
 ```
 
-On this Windows computer, if `python` is not in PATH, the bundled interpreter worked. Example in PowerShell:
-
-```powershell
-$py = Join-Path $env:USERPROFILE '.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
-& $py -B e07.py demo
-```
+To verify that the published evidence still reproduces, run `python -B tools/release_check.py`. It works in a temporary directory, compares outputs against the archive, and prints a coverage and provenance summary without querying any model.
 
 The offline controls recover the designed effects of **0, 0, and +100 percentage points** in each mode. The six-model pilot tested three Gemma and three Ministral snapshots. Its follow-up checked how response formatting affected scoring.
 

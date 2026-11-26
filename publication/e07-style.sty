@@ -1,0 +1,23 @@
+% Shared typesetting for the E07 article and protocol.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{e07-style}[2026/11/24 E07 research documents]
+\RequirePackage[a4paper,top=24mm,bottom=24mm,left=29mm,right=29mm,headheight=14pt,headsep=8mm]{geometry}
+\RequirePackage{amsmath,booktabs,array,fancyhdr}
+\RequirePackage[hidelinks]{hyperref}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\scshape E07\enspace / \enspace Agent evaluation}
+\fancyhead[R]{\small\itshape\doctype}
+\fancyfoot[L]{\footnotesize 24 November 2026}
+\fancyfoot[R]{\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.35pt}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{2pt}
+\raggedbottom
+\newcommand{\heading}[1]{\noindent{\LARGE\bfseries #1\par}\vspace{6pt}}
+\newcommand{\lead}[1]{\noindent\textbf{#1}\enspace\ignorespaces}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\snapshot}{e4408f4ac335efe90cd53d60cf470d3ffadf2be3}
+\newcommand{\artifact}[2]{\href{https://github.com/mat092011/e07-agent-status/blob/\snapshot/#1}{#2}}
+\newcommand{\tabtitle}[1]{\refstepcounter{table}\par\medskip\noindent\textbf{Table \thetable.}\enspace #1\par\nobreak\smallskip}
+\newenvironment{datatable}{\par\begingroup\small\centering\renewcommand{\arraystretch}{1.13}}{\par\endgroup\smallskip}

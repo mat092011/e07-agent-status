@@ -1,3 +1,10 @@
 __pycache__/
 *.py[cod]
 /runs/
+.env
+.env.*
+!.env.example
+.venv/
+/artifacts/
+/output/
+*.log

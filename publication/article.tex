@@ -1,0 +1,83 @@
+% Build from this directory with: tectonic article.tex
+\documentclass[11pt]{article}
+\newcommand{\doctype}{Technical article}
+\usepackage{e07-style}
+\hypersetup{pdftitle={Reporting completion after a confirmed failure},pdfsubject={E07 local model study}}
+\begin{document}
+\heading{Reporting completion after a confirmed failure}
+\noindent{\large Closure incentives and response order in six local language models}\par\medskip
+
+\lead{Abstract.} A task dashboard can reward an agent for reporting completion even when a tool confirms failure. We tested whether this incentive increased the frequency with which a model reported completion and chose to retry the same task. The original six-model pilot recorded zero such pairs in both arms, although strict JSON parsing rejected every independent status report from four models. Re-scoring fenced JSON and collecting skipped reports preserved the zero contrast. A separate rotation of response options exposed a larger source of variation. Without the incentive, Gemma 3 1B produced the joint outcome on 0, 7 and 0 of 12 failures across three orders. In a fresh comparison balanced over orders, the incentive changed one Gemma 1B report at a fixed retry decision (7/36 to 8/36). Gemma 12B had zero events in either arm. On these cases, the menu could determine whether a reporting discrepancy was visible at all.
+
+\section{What counts as a discrepancy?}
+Consider a failed export. The receipt says no matching report was persisted. An agent can tell the user that the export finished, then spend two work units to retry it. A successful retry repairs the artifact, but the earlier claim still describes the failed attempt. E07 records the claim, the choice and the simulator's state separately.
+
+Zhu et al.\ fix a failed tool trace and score subsequent claims against the available evidence~\cite{zhu}. Pal et al.\ compare elicited confidence with operational decisions~\cite{pal}. E07 asks a narrower question: does rewarding a completion \emph{report} change its agreement with an executable next action? A second measurement issue follows from work on multiple-choice evaluation: reordering equivalent answers can change the selected label~\cite{order}. E07 tests this directly on both branches.
+
+\section{Design and estimation}
+The pilot crossed 12 scenarios (four each for report exports, spreadsheet saves and index builds) with two initial states, two receipt types and two dashboard messages. A clear receipt identifies success or failure. An ambiguous receipt is identical across hidden states. The control dashboard counts assignments. The treatment dashboard scores the team on the fraction reported done. All costs, evidence and choices stay fixed within each KPI comparison.
+
+In the primary \emph{split} design, independent requests elicit the status and action from the same history. In the \emph{committed} design, the model sees its own action choice before reporting the original status. Execution follows the report opportunity. Handoff costs zero, inspection one and retry two work units. On confirmed failures, the primary indicator equals one when the status is \code{done} and the action is \code{retry}. A missing label cannot contribute a positive event. We report coverage alongside counts.
+
+Each snapshot ran locally with Ollama 0.40.18, Q4\_K\_M weights, temperature zero and a 50-token output cap. For each model, we subtract the KPI-off event rate from the KPI-on rate in matched scenarios. In the balanced follow-up each scenario contributes its mean difference over three rotations. Descriptive 95\% intervals use 10,000 whole-scenario bootstrap draws.
+
+\newpage
+\section{Pilot results and response coverage}
+Three deterministic controls recovered the designed contrasts of 0, 0 and $+100$ percentage points (pp) in both designs. The always-success control produced the event on every confirmed failure in both arms. A zero contrast can therefore coexist with a high rate of false reports.
+
+Across the six snapshots, the strict pilot score was 0/12 per arm in both designs. Gemma 1B always reported completion and chose handoff on clear split failures. Gemma 12B correctly reported failure and chose retry. The other four snapshots had no valid split status reports under the strict parser (Table~\ref{t:coverage}).
+
+\tabtitle{Pilot coverage and the later format audit. Each split branch had 96 scheduled replies per model. The last column counts skipped committed status requests.}\label{t:coverage}
+\begin{datatable}
+\begin{tabular}{@{}lrrrr@{}}\toprule
+ & \multicolumn{2}{c}{Strictly valid, split} & \multicolumn{2}{c}{Across the pilot}\\
+\cmidrule(lr){2-3}\cmidrule(l){4-5}
+Snapshot & Status & Action & Recovered by parser & Skipped reports\\\midrule
+Gemma 3 1B &96&96&0&0\\
+Gemma 3 4B &0&95&98&1\\
+Gemma 3 12B &96&96&0&0\\
+Ministral 3 3B &0&6&275&89\\
+Ministral 3 8B &0&0&288&96\\
+Ministral 3 14B &0&0&288&96\\\bottomrule
+\end{tabular}
+\end{datatable}
+
+Allowing one surrounding Markdown fence recovered all 949 originally invalid replies among 2,022 saved. A later replay elicited all 282 skipped committed reports. Each model still had zero joint events per arm on clear failures in the supplemented view. All three Ministral snapshots reported failure and chose retry throughout those comparisons.
+
+One replay shows how the missingness arose. A receipt confirmed that the media reach report was absent. With the KPI on, Ministral 8B chose \code{retry} inside a code fence. The collector skipped the dependent status request. When the follow-up replayed that exact answer, the model reported \code{not\_done}. The simulator then retried the export, spent two units and produced the report. The action came from the pilot and the status from the later collection.
+
+\lead{Fresh wording.} Gemma 4B's pilot retry count fell from 6/12 to 0/12 with the KPI. On 24 new failures its retry count fell from 17 to 15 ($-8.3$ pp, scenario interval $[-20.8,0.0]$). Two scenarios lost a retry and none gained one. The exact paired test gave $p=0.50$, missing the prospective replication threshold.
+
+\newpage
+\section{What changed when the options moved?}
+The KPI-off order study repeated each clear history under three cyclic menus. Gemma 1B chose the first action 72/72 times and the receipt-correct action 24/72 times. Gemma 12B chose correctly on 61/72 actions and 72/72 reports. In the exploratory pairing on the 12 confirmed failures, Gemma 1B reported completion and chose retry on 0/12, 7/12 and 0/12 cases in successive rotations. Only the middle rotation put retry first.
+
+The balanced study collected both KPI arms afresh under each order. All 288 replies passed strict validation. In the middle rotation, Gemma 1B chose retry on all 12 failures in both arms. For one regional demand export (\code{ex01}), the KPI changed its status from \code{not\_done} to \code{done}. This single change accounts for the balanced contrast in Table~\ref{t:balanced}. Gemma 12B changed two actions in opposite directions and correctly reported failure throughout.
+
+\tabtitle{Balanced comparison on confirmed failures. Each arm has 12 scenarios observed in three orders. Differences and scenario intervals are in percentage points.}\label{t:balanced}
+\begin{datatable}
+\begin{tabular}{@{}llrrrr@{}}\toprule
+Gemma 3 & Outcome & KPI off & KPI on & Difference & 95\% interval\\\midrule
+1B & Done and retry &7/36&8/36&$+2.8$&$[0.0,+8.3]$\\
+   & Done &19/36&20/36&$+2.8$&$[0.0,+8.3]$\\
+   & Retry &12/36&12/36&$0.0$&$[0.0,0.0]$\\\addlinespace
+12B & Done and retry &0/36&0/36&$0.0$&$[0.0,0.0]$\\
+    & Done &0/36&0/36&$0.0$&$[0.0,0.0]$\\
+    & Retry &25/36&25/36&$0.0$&$[-8.3,+8.3]$\\\bottomrule
+\end{tabular}
+\end{datatable}
+
+\section{Interpretation and limitations}
+For Gemma 1B, displaying retry first made a disagreement possible on these failures. Holding that order fixed, the closure incentive changed one report. For Gemma 12B, report accuracy concealed occasional errors in the choice of recovery action. A joint score becomes interpretable when accompanied by both component rates, parser coverage and the actual menu.
+
+The balanced comparison covers two snapshots, one decoding setting and 12 purposively written scenarios in three families. Cyclic shifts move all labels together. The paired interval describes variation across those scenarios. Independent branches measure co-occurrence on matched evidence, and even an action-first trajectory supplies no observation of a model's private intent.
+
+\smallskip\lead{Reproducibility.} The \artifact{README.md}{archived study at revision \code{e4408f4}} includes frozen prompts, raw responses, simulator traces and offline scoring commands. The accompanying protocol specifies pairing, coverage and audit rules.
+
+{\small
+\begin{thebibliography}{9}\setlength{\itemsep}{0pt}
+\bibitem{zhu} J. Zhu et al. \href{https://arxiv.org/abs/2609.35732v1}{Failure-Transparent Agents: Benchmarking Post-Failure Reporting in Tool-Using Language Models}. arXiv:2609.35732v1, 2026.
+\bibitem{pal} A. Pal et al. \href{https://arxiv.org/abs/2511.13240v3}{Knowing What You Know Is Not Enough: Large Language Model Confidences Don't Align With Their Actions}. arXiv:2511.13240v3, 2026.
+\bibitem{order} P. Pezeshkpour and E. Hruschka. \href{https://aclanthology.org/2024.findings-naacl.130/}{Large Language Models Sensitivity to The Order of Options in Multiple-Choice Questions}. Findings of NAACL, pp.~2006--2017, 2024.
+\end{thebibliography}}
+\end{document}
